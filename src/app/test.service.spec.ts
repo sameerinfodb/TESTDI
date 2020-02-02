@@ -6,7 +6,13 @@ describe("Testing Test Service", () => {
   testService: TestService;
   beforeEach(() => {
     TestBed.configureCompiler({
-      providers: [TestService]
+      providers: [
+        {
+          provide: MAGIC_NUMBER,
+          useValue: 007
+        },
+        TestService
+      ]
     });
 
     this.testService = TestBed.get(TestService);
