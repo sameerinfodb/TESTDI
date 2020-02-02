@@ -1,6 +1,6 @@
 import { TestBed, inject } from "@angular/core/testing";
 import { TestService } from "./test.service";
-import { MAGIC_NUMBER } from "src/main";
+import { MAGIC_NUMBER } from "./token";
 
 describe("Testing Test Service", () => {
   testService: TestService;

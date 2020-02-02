@@ -1,5 +1,5 @@
 import { Injectable, Inject } from "@angular/core";
-import { MAGIC_NUMBER } from "src/main";
+import { MAGIC_NUMBER } from "./token";
 
 @Injectable({ providedIn: "root" })
 export class TestService {
