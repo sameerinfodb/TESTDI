@@ -5,11 +5,11 @@ import { MAGIC_NUMBER } from "src/main";
 describe("Testing Test Service", () => {
   testService: TestService;
   beforeEach(() => {
-    TestBed.configureCompiler({
+    TestBed.configureTestingModule({
       providers: [
         {
           provide: MAGIC_NUMBER,
-          useValue: 007
+          useValue: 7
         },
         TestService
       ]
