@@ -3,7 +3,9 @@ import { TestService } from "./test.service";
 import { MAGIC_NUMBER } from "./token";
 
 describe("Testing Test Service", () => {
-  testService: TestService;
+
+  let testService: TestService;
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
@@ -15,9 +17,11 @@ describe("Testing Test Service", () => {
       ]
     });
 
-    this.testService = TestBed.get(TestService);
+    testService = TestBed.get(TestService);
   });
+
   it("Should create TestService", () => {
-    expect(this.testService).toBeTruthy();
+    expect(testService).toBeTruthy();
   });
+
 });
